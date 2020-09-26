@@ -16,3 +16,12 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # /data/haarcascades/haarcascade_eye.xml 
 # Trained XML file for detecting eyes 
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')  
+# capture frames from a camera 
+cap = cv2.VideoCapture(0) 
+  
+# loop runs if capturing has been initialized. 
+while 1:  
+  
+    # reads frames from a camera 
+    ret, img = cap.read()  
+  
