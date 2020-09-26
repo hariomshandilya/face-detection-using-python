@@ -25,3 +25,6 @@ while 1:
     # reads frames from a camera 
     ret, img = cap.read()  
   
+ # convert to gray scale of each frames 
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+    
