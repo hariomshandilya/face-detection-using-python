@@ -36,3 +36,10 @@ while 1:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,255,0),2)  
         roi_gray = gray[y:y+h, x:x+w] 
         roi_color = img[y:y+h, x:x+w] 
+         # Detects eyes of different sizes in the input image 
+        eyes = eye_cascade.detectMultiScale(roi_gray)  
+  
+        #To draw a rectangle in eyes 
+        for (ex,ey,ew,eh) in eyes: 
+            cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,127,255),2) 
+  
