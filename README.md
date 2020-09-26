@@ -42,4 +42,16 @@ while 1:
         #To draw a rectangle in eyes 
         for (ex,ey,ew,eh) in eyes: 
             cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,127,255),2) 
+  # Display an image in a window 
+    cv2.imshow('img',img) 
   
+    # Wait for Esc key to stop 
+    k = cv2.waitKey(30) & 0xff
+    if k == 27: 
+        break
+  # Close the window 
+cap.release() 
+  
+# De-allocate any associated memory usage 
+cv2.destroyAllWindows()  
+
