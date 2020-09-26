@@ -12,3 +12,4 @@ import cv2
 # object we want to detect a cascade function is trained 
 # from a lot of positive(faces) and negative(non-faces) 
 # images. 
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') 
