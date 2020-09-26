@@ -13,3 +13,6 @@ import cv2
 # from a lot of positive(faces) and negative(non-faces) 
 # images. 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml') 
+# /data/haarcascades/haarcascade_eye.xml 
+# Trained XML file for detecting eyes 
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')  
